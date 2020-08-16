@@ -1,0 +1,49 @@
+@font-face {
+    font-family: SACKERS_PA;
+    src: url("../assets/fonts/SACKERS_PA.otf") format("opentype");
+}
+
+body {
+    font-family: 'SACKERS_PA', serif;
+    font-size: 24px;
+    text-align: center; 
+    background-color: white; 
+}
+
+div.header {
+    padding: 50px 25px;
+    /*overflow: hidden;*/
+}
+div.main {
+    text-align: left;
+}
+div.footer {
+    padding: 100px 75px;
+    text-align: right;
+    background-color: rgb(231,233,225);
+}
+
+div.name {
+    text-align: left;
+}
+div.logo {
+    text-align: right;
+}
+div.text {
+    padding: 80px 60px;
+}
+
+div.main img {
+    width: 100%;
+}
+
+a, a:hover, a:visited, a:active, a:link {
+    text-decoration : none;
+    color : #000;
+}
+
+@media (max-width: 575px) {
+    body {
+        font-size: 30px;
+    }
+}
