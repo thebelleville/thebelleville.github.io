@@ -33,6 +33,11 @@ div.text {
     padding: 80px 60px;
 }
 
+div.text-big {
+    padding: 80px 60px;
+    font-size: 32px;
+}
+
 div.main img {
     width: 100%;
 }
@@ -40,10 +45,4 @@ div.main img {
 a, a:hover, a:visited, a:active, a:link {
     text-decoration : none;
     color : #000;
-}
-
-@media (max-width: 575px) {
-    body {
-        font-size: 30px;
-    }
 }
