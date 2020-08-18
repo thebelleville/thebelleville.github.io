@@ -6,8 +6,7 @@
 
 <body>
 
-<!-- LAPTOP -->
-	<div class="container-fluid">
+	<div class="container-fluid" id="content">
 	
     <div class="header">
         <div class="row">
@@ -126,10 +125,56 @@ events is situated on the north-west corner of the property overlooking the lake
       <p><a href="mailto:info@thebelleville.org">info@thebelleville.org</a></p>
     </div>
 
+	</div>
 
-<!-- END LAPTOP -->
+	<div class="container-fluid" id="login">
 
+
+		<div class="row" id="passcode">
+
+			<div>
+		    <p>Please enter passcode:</p>
+		    <input type="password" id="pass" name="password" required>
+			</div>
+
+			<br>
+
+			<input type="submit" onclick="submitCode()" value="SUBMIT">
+
+		</div>
+
+		<br>
+
+		<div class="row" id="wrong-code">
+
+			<p style="color:darkred">Invalid passcode. Please try again.</p>
+
+		</div>
 
 	</div>
 
 </body>
+
+
+<script type="text/javascript">
+
+	function submitCode() {
+
+	  var content = document.getElementById("content");
+	  var passcode = document.getElementById("passcode");
+	  var wrongCode = document.getElementById("wrong-code");
+
+	  var submittedPw = document.getElementById('pass').value;
+
+	  if (submittedPw === '081400') {
+	  	content.style.display = "block"
+	  	document.getElementById("login").remove()
+	  } else {
+	  	wrongCode.style.display = "block"
+	  }
+
+	}
+
+</script>
+
+

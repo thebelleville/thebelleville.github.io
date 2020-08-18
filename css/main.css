@@ -42,6 +42,21 @@ div.main img {
     width: 100%;
 }
 
+div#content, div#wrong-code {
+    display: none;
+}
+
+div#login {
+    font-family: Helvetica;
+    padding: 200px 100px;
+}
+
+div#passcode {
+    font-size: 32px;
+    font-weight: 100;
+    color: #333;
+}
+
 a, a:hover, a:visited, a:active, a:link {
     text-decoration : none;
     color : #000;
